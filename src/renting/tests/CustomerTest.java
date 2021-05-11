@@ -18,6 +18,7 @@ class CustomerTest {
 
     @Test
     void statement() {
+        System.out.println(c1.statement());
         assert c1.statement().equals("""
                 Rental Record for joe
                 \tTitle\t\tDays\tAmount
