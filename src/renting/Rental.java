@@ -1,6 +1,6 @@
 package renting;
 
-class Rental {
+public class Rental {
     private final Movie movie;
     private final int daysRented;
     public Rental(Movie newMovie, int newDaysRented) {

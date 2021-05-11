@@ -2,7 +2,7 @@ package renting;
 
 import java.util.*;
 
-class Customer {
+public class Customer {
     private final String name;
     private final Vector<Rental> rentals = new Vector<>();
     public Customer (String newName){
@@ -44,18 +44,21 @@ class Customer {
     private double amountFor(Rental each) {
         double thisAmount = 0;
         switch (each.getMovie().getPriceCode()) {
-            case Movie.REGULAR -> {
+            case Movie.REGULAR:
                 thisAmount += 2;
                 if (each.getDaysRented() > 2)
                     thisAmount += (each.getDaysRented() - 2) * 1.5;
-            }
-            case Movie.NEW_RELEASE -> thisAmount += each.getDaysRented() * 3;
-            case Movie.CHILDREN -> {
+                break;
+            case Movie.NEW_RELEASE:
+                thisAmount += each.getDaysRented() * 3;
+                break;
+            case Movie.CHILDREN:
                 thisAmount += 1.5;
                 if (each.getDaysRented() > 3)
                     thisAmount += (each.getDaysRented() - 3) * 1.5;
-            }
-            default -> { return -1; }
+                break;
+            default:
+                return -1;
         }
         return thisAmount;
     }
