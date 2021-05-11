@@ -1,2 +1,2 @@
-# SE-Refactoring
-A repository for the tasks of SE2 W5-Refactoring
+# Fowler-Refactoring
+Refactoring according to chapter one in Fowler's "Refactoring"
