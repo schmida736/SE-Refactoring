@@ -1,3 +1,5 @@
+package renting;
+
 import java.util.*;
 
 class Customer {

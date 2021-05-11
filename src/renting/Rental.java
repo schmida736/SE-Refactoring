@@ -1,3 +1,7 @@
+package renting;
+
+import renting.Movie;
+
 class Rental {
     private final Movie movie;
     private final int daysRented;
