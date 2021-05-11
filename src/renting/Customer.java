@@ -3,15 +3,15 @@ package renting;
 import java.util.*;
 
 public class Customer {
-
-    public Customer (String newName){
-        name = newName;
-    }
     private final String name;
     private final Vector<Rental> rentals = new Vector<>();
 
     private double totalCharge = 0;
     private int totalFrequentRenterPoints = 0;
+
+    public Customer (String newName){
+        name = newName;
+    }
 
     public double getTotalCharge() {
         return totalCharge;
