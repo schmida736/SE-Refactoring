@@ -1,7 +1,8 @@
-package renting.UnitTests;
+package renting.tests;
 
 import org.junit.jupiter.api.*;
 import renting.*;
+
 
 class CustomerTest {
     private static final Movie m1 = new Movie("movie1", 1);
